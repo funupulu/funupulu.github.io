@@ -44,7 +44,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
+https://material.io/design/interaction/states.html#focus
+
+https://www.fldtrace.com/advantages-and-disadvantages-of-adaptive-websites
+
 ## My process
+
+I alwats start with seeing what the colors look like.
 
 ### Built with
 
