@@ -106,7 +106,31 @@ footer {
 }
 
 @media all and (min-width: 400px) {
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 75vh;
+        width: 50vw;
+        
+    }
     h1 {
-        color: #fff;
+        color: red;
+    }
+
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-img {
+        border-radius: 12px 0 12px 12px;
+        height: 100%;
+    }
+
+    img {
+        border-radius: 12px 0 0 12px;
+        height: 100%;
     }
 }
