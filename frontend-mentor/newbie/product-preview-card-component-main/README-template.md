@@ -48,44 +48,41 @@ https://material.io/design/interaction/states.html#focus
 
 https://www.fldtrace.com/advantages-and-disadvantages-of-adaptive-websites
 
+https://cssguidelin.es/#naming-conventions
 ## My process
 
-I alwats start with seeing what the colors look like.
+I always start with seeing what the colors look like.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+There are two modern CSS techniques to center elements:
 
-To see how you can add code snippets, see below:
+Using flexbox layout:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+   margin: 0;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Using grid layout:
+
+body {
+   margin: 0;
+   width: 100%;
+   min-height: 100vh;
+   display: grid;
+   place-content: center;
+}
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 

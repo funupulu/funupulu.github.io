@@ -9,6 +9,14 @@
 
 body {
     background-color: var(--bgc);
+
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -19,7 +27,18 @@ body {
 
     display: flex;
     flex-direction: column;
+   
+    
 
+    -webkit-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+    box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-img {
@@ -36,20 +55,58 @@ h1, h3, p, span {
     padding: 0 30px 0;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: 2em;
+}
+
 h3 {
-    font-family: sans-serif;
+    font-family:  sans-serif;
     font-weight: normal;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.price {
+    margin-bottom: 1.5em;
+}
+
+#new-price {
+    color: var(--btn-color);
+    font-size: 40px;
+    margin: 0;
+}
+
+#old-price {
+    text-decoration: line-through;
 }
 
 .cart-btn {
     background-color: var(--btn-color);
     border: none;
+    border-radius: 10px;
     color: #fff;
-    display: flex;
     
+    
+    font-weight: bolder;
     height: 50px;
     justify-content: center;
 
-    margin: 15px 0 0 0;
-    width: 50%;
+    margin: auto;
+    padding: 15px;
+    width: 85%;
+    
+}
+
+footer {
+    margin: 5em;
+}
+
+@media all and (min-width: 400px) {
+    h1 {
+        color: #fff;
+    }
 }
