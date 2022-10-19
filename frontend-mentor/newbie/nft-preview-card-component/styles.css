@@ -1,0 +1,49 @@
+:root {
+  --bg-color: hsl(217, 54%, 11%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color:hsl(217, 54%, 11%);
+  color: hsl(216, 50%, 16%);
+  color: hsl(215, 32%, 27%);
+  color: hsl(0, 0%, 100%);
+  color: hsl(215, 51%, 70%);
+  color: hsl(178, 100%, 50%);
+
+
+}
+
+.card {
+  border: 1px red solid;
+  height: 400px;
+  width: 375px;
+  
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: inherit;
+  overflow: hidden;
+}
+
+img {
+  object-fit:contain;
+  width: inherit;
+  
+}
+
