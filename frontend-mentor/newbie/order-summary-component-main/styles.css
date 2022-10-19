@@ -10,8 +10,12 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
+    /* box-sizing: border-box; */
     background-image: url('/frontend-mentor/newbie/order-summary-main-component/images/pattern-background-desktop.svg');
     background-repeat: repeat-x;
 
