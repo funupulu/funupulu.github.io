@@ -84,6 +84,8 @@ body {
    place-content: center;
 }
 
+The content with text and button overflows and idk why. I've tried using flex and grid layout, I've wrapped that section but nothing. 
+
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
