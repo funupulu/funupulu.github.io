@@ -10,10 +10,6 @@
 
 }
 
-h2, a, p {
-    color: var(--light-gray);
-}
-
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -25,21 +21,24 @@ h2, a, p {
   /* Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
 }
 
+body, button {
+    font-family: 'Lexend Deca';
+}
+
 .container {
     border-radius: 50px;
     display: grid;
     grid-template-rows: repeat(3), 1fr;
-    padding: 1.25rem;
+    padding: 1rem;
 
-    width: 450px;
+    width: 400px;
     margin: 0 auto 1rem;
 }
 
-.row-1, .row-2, .row-3 {
+.container .row-1, .row-2, .row-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
     
     
     padding: 5em;
@@ -57,14 +56,35 @@ h2, a, p {
     background-color: var(--darker-cyan);
 }
 
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h2, a, p {
+    color: var(--light-gray);
+}
+
 a {
     background-color: var(--light-gray);
     border-radius: 50px;
     color: var(--bright-orange);
+    cursor: pointer;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
+    transition: all 0.4s ease-in-out;
     width: 10rem;
+}
+
+a:hover {
+  background-color: yellow;
+  color: #fff;
 }
 
 
@@ -76,8 +96,29 @@ a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1025px) {
-    .container {
-        grid-template-columns: repeat(3), 1fr;
-    }
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* max-width: 900px; */
+    margin: auto;
+  }
+
+  .bright-orange {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .very-dark-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card {
+    padding: 45px;
+  }
+
+  .card p {
+    margin-bottom: 80px;
+  }
 }
