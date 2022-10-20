@@ -1,9 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(213, 185, 241); 
+    background-color: rgb(213, 185, 241);
+    display: grid;
+    place-items: center;
 }
 
 .container {
-    height: max-content;
+    /* height: max-content;
     width: max-content;
 
     display: flex;
@@ -15,7 +23,16 @@ body {
     right: 0;
     left: 0;
 
-    overflow: auto;
+    overflow: auto; */
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  
+  
 }
 
 h2 {
@@ -25,7 +42,7 @@ h2 {
 a {
     color: black;
     font-size: 20px;
-    margin: auto;
+    /* margin: auto; */
     padding: 8px;
     text-decoration: none;
 }
