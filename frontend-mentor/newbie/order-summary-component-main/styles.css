@@ -25,6 +25,7 @@ body {
 
 .grid-card {
   background-color: #fff;
+  border-radius: 10px;
   min-height: 100%;
   width: 350px;
   
@@ -32,6 +33,8 @@ body {
   display: grid;
   align-self: center;
   place-items: center;
+
+  gap: 1.5rem; 
 }
 
 #hero-image {
@@ -79,11 +82,17 @@ body {
   background-color: inherit;
   border: hidden;
   color: var(--button);
+  font-weight: 900;
 
   padding-left: 3rem;
 
   text-decoration-line: underline;
   
+}
+.select-card > .change-btn:hover {
+  color: blueviolet;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .payment-btn {
@@ -94,11 +103,19 @@ body {
   padding: 1rem 4rem;
   text-decoration: none;
 }
+.payment-btn:hover {
+  background-color: blueviolet;
+  font-weight: 700;
+}
 
 #cancel-order {
   color: gray;
   font-weight: 700;
   text-decoration: none;
+  padding-bottom: 1rem;
+}
+#cancel-order:hover {
+  font-weight: 900;
 }
 
 
@@ -109,8 +126,13 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-
-
+@media screen and (min-width: 992px) {
+  body {
+    background-color: var(--primary-color);
+    background-image: url('/frontend-mentor/newbie/order-summary-component-main/images/pattern-background-desktop.svg');
+    background-repeat: repeat-x;
+  }
+}
 
 
     /* box-shadow: -1px 36px 68px -16px rgba(74,37,179,0.7);
