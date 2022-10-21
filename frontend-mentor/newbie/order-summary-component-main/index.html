@@ -2,72 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/12aa515f0e.js" crossorigin="anonymous" defer></script>
-  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-    <a href="/index.html">Go back</a>
-  
-    <div class="container">
-        <div class="card-wrapper">
-          <picture>
-            <img src="/frontend-mentor/newbie/order-summary-component-main/images/illustration-hero.svg" alt="" class="svg">
-          </picture>
-          <div id="summary">
-            <h2>Order Summary</h2>
-            <p>
-              You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-            </p>
-          </div>
-        </div>
 
-        <div class="plan-wrapper">
-          <div class="lc">
-            <img src="images/icon-music.svg" alt="music logo" id="logo">
-            <div class="text-wrapper">
-                <p>Annual Plan</p>
-                <p>$59.99/year</p>
-            </div>
-          </div>
-          <div class="rc">
-            <button class="change-plan-btn">
-              <strong>
-                Change
-              </strong>
-            </button>
-          </div>
-          </div>
+  <main class="grid-card">
+    <img id="hero-image" src="/frontend-mentor/newbie/order-summary-component-main/images/illustration-hero.svg" alt="hero">
+    <h2>Order Summary</h2>
+    <p>
+      You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+    </p>
+    <section class="select-card">
+      <img src="/frontend-mentor/newbie/order-summary-component-main/images/icon-music.svg" alt="music logo">
+      <div class="text-wrapper">
+        <p id="bold">Annual Plan</p>
+        <p id="gray">$59.99</p>
+      </div>
+      <button class="change-btn">
+        Change
+      </button>
+    </section>
+    <a href="" class="payment-btn">Proceed to Payment</a>
+    <a href="" id="cancel-order">Cancel Order</a>
+  </main>
+    
 
-          <div class="btns">
-            <button class="proceed-btn">
-              <strong>
-                Proceed to Payment
-              </strong>
-            </button>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Guiver</a>.
+  </footer>
 
-            <button class="cancel-btn">Cancel Order</button>
-          </div> 
-    </div>
-
-        <footer class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Guiver</a>.
-        </footer>
-
-    </div>
+  </div>
 </body>
 </html>
