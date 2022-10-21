@@ -17,14 +17,15 @@
 }
 
 body {
+  background-color: var(--primary-color);
   display: grid;
   place-items: center;
 }
 
 .grid-card {
-  border: 1px solid red;
+  background-color: #fff;
   min-height: 100%;
-  width: 375px;
+  width: 350px;
 
   display: grid;
   align-self: center;
