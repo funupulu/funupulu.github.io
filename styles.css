@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,10 @@
 
 body {
     background-color: rgb(213, 185, 241);
+    min-height: 100vh;
     display: grid;
-    place-items: center;
+    place-content: center;
+    grid-template-rows: 10% 1fr;
 }
 
 .container {
@@ -25,14 +29,23 @@ body {
 
     overflow: auto; */
 
-  height: 100vh;
-  display: flex;
+  /* height: 100vh; */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: max-content;
-  
-  
+  width: max-content; */
+
+  display: grid;
+  align-self: center;
+  place-items: center;
+  width: 350px;
+  /* min-height: max-content; */
+}
+
+nav {
+  background-color: #fff;
+  width: 100vw;
 }
 
 h2 {
