@@ -126,7 +126,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (orientation: landscape), (min-width: 992px) {
   body {
     background-color: var(--primary-color);
     background-image: url('/frontend-mentor/newbie/order-summary-component-main/images/pattern-background-desktop.svg');
