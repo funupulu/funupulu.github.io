@@ -9,11 +9,22 @@
   <title>Frontend Mentor | QR code component</title>
 </head>
 <body>
-  <main class="grid-card">
-    <img src="/frontend-mentor/newbie/qr-code-component-main/images/image-qr-code.png" alt="">
-    <h2>Improve your front-end skills by building projects</h2>
-    <p>Scan the QR code to vist Frontend Mentor and take your coding skills to the next level.</p>
+  <main class="card">
+    <div class="hero-img">
+      <img src="/frontend-mentor/newbie/qr-code-component-main/images/image-qr-code.png" alt="qr code">
+    </div>
+    <div class="text">
+      <p>
+        <strong>
+          Improve your front-end skills by building projects
+        </strong>
+      </p>
+      <p>  
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
   </main>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
