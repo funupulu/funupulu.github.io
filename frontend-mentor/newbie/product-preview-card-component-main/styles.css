@@ -1,158 +1,123 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,700;1,500&family=Outfit:wght@400;700&display=swap');
 
 :root {
-    --bgc: hsl(30, 38%, 92%);
-    --header-color: hsl(212, 21%, 14%);
-    --text-color: hsl(228, 12%, 48%);
-    --btn-color: hsl(158, 36%, 37%);
-    --card-color: hsl(0, 0%, 100%);
-
+  --bgc: hsl(30, 38%, 92%);
+  --header-color: hsl(212, 21%, 14%);
+  --text-color: hsl(228, 12%, 48%);
+  --btn-color: hsl(158, 36%, 37%);
+  --card-color: hsl(0, 0%, 100%);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Montserrat';
-    color: var(--text-color);
-    /* text-decoration: none; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--bgc);
-    
-    /* padding-top: max(20px, calc((100vh - 625px) / 2));
-    padding-bottom: max(20px, calc((100vh - 625px) / 2)); */
+  background-color: var(--bgc);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
 }
 
-.card {
-    background-color: var(--card-color);
-    border-radius: 12px;
-
-    width: 360px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-    -webkit-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
-    box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
-
+.grid-card {
+  background-color: var(--card-color);
+  border-radius: 15px;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+  margin-bottom: 1rem;
+  width: 350px;
 }
 
-/* section {
-    display: flex;
-    flex-direction: column;
-} */
-
-.hero-img {
-    display: flex;
-    align-items: center;
-    height: 250px;
-    width: inherit;
-    overflow: hidden;
+.row-1 > .mobile{
+  border-radius: 15px 15px 0 0 ;
+  width: 100%;
 }
 
-img {
-    /* border-radius: 12px 12px 0 0;
-    width: 100%; */
-    object-fit: fill;
-    width: inherit;
+.row-1 > .desktop {
+  display: none;
 }
 
-h1, h3, p, span {
-    padding: 0 30px 0;
+.row-2 {
+  margin: 1.5rem;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 2em;
+#title {
+  color: var(--text-color);
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  padding-bottom: .5rem;
+  padding-top: 0;
 }
 
-h3 {
-    font-family:  sans-serif;
-    font-weight: normal;
-
+#header {
+  font-family: 'Fraunces';
+  padding-bottom: 1rem;
 }
 
-p {
-    font-size: 15px;
-}
-
-.price {
-    margin-bottom: 1.5em;
+#description {
+  color: var(--text-color);
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  margin-bottom: 1rem;
 }
 
 #new-price {
-    color: var(--btn-color);
-    font-size: 40px;
-    margin: 0;
+  color: var(--btn-color);
+  font-family: 'Fraunces';
+  font-size: 2rem;
+  font-weight: 700;
+  /* padding-right: 1rem; */
 }
 
 #old-price {
-    text-decoration: line-through;
+  text-decoration-line: line-through;
 }
 
-.cart-btn {
-    background-color: var(--btn-color);
-    border: none;
-    border-radius: 11px;
-    color: #fff;
-    
-    
-    font-weight: bolder;
-    height: 50px;
-    justify-content: center;
-
-    margin: auto;
-    padding: 15px;
-    width: 85%;
-    
+button {
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  display: block;
+  padding: .7rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
-footer {
-    margin: 5em;
+button:hover {
+  background-color: darkgreen;
 }
 
-@media (min-width: 500px) {
-
-    
-    .card {
-        width: 450px;
-        margin: 0 auto;
-        
-    }
-    h1 {
-        color: red;
-    }
+button > img {
+  margin: 0;
+  padding-right: .5rem;
+}
 
 
-    section {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        height: 350px;
-    }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+@media screen and (orientation: landscape), (min-width: 992px) {
+  .grid-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+  }
 
-    .hero-img {
-        border-radius: 12px 0 12px 12px;
-        
-    }
+  .row-1 > .mobile {
+    display: none;
+  }
 
-    img {
-        border-radius: 12px 0 0 12px;
-        height: 100%;
-    }
+  .row-1 > .desktop {
+    display: flex;
+    width: 100%;
+  }
 }

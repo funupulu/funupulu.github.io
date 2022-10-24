@@ -1,0 +1,158 @@
+
+
+:root {
+    --bgc: hsl(30, 38%, 92%);
+    --header-color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+    --btn-color: hsl(158, 36%, 37%);
+    --card-color: hsl(0, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    /* text-decoration: none; */
+}
+
+body {
+    background-color: var(--bgc);
+    
+    /* padding-top: max(20px, calc((100vh - 625px) / 2));
+    padding-bottom: max(20px, calc((100vh - 625px) / 2)); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 12px;
+
+    width: 360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    -webkit-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+    box-shadow: 6px 14px 19px -15px rgba(0,0,0,0.75);
+
+}
+
+/* section {
+    display: flex;
+    flex-direction: column;
+} */
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: inherit;
+    overflow: hidden;
+}
+
+img {
+    /* border-radius: 12px 12px 0 0;
+    width: 100%; */
+    object-fit: fill;
+    width: inherit;
+}
+
+h1, h3, p, span {
+    padding: 0 30px 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+h3 {
+    font-family:  sans-serif;
+    font-weight: normal;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.price {
+    margin-bottom: 1.5em;
+}
+
+#new-price {
+    color: var(--btn-color);
+    font-size: 40px;
+    margin: 0;
+}
+
+#old-price {
+    text-decoration: line-through;
+}
+
+.cart-btn {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 11px;
+    color: #fff;
+    
+    
+    font-weight: bolder;
+    height: 50px;
+    justify-content: center;
+
+    margin: auto;
+    padding: 15px;
+    width: 85%;
+    
+}
+
+footer {
+    margin: 5em;
+}
+
+@media (min-width: 500px) {
+
+    
+    .card {
+        width: 450px;
+        margin: 0 auto;
+        
+    }
+    h1 {
+        color: red;
+    }
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 350px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-img {
+        border-radius: 12px 0 12px 12px;
+        
+    }
+
+    img {
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+    }
+}
