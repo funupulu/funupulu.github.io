@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,700;1,500&family=Outfit:wght@300;400;700&display=swap');
 
 :root {
   --soft-blue: hsl(215, 51%, 70%);
@@ -6,7 +6,7 @@
 
   /* ### Neutral */
   --bg-color: hsl(217, 54%, 11%);
-  --card: hsl(216, 50%, 16%);
+  --card-bg: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
 }
@@ -19,123 +19,69 @@
 
 body {
   background-color: var(--bg-color);
-  color: hsl(0, 0%, 100%, 60%);
-  /* margin: 0;
-  width: 100%;
+  display: grid;
+  place-content: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-
-  padding: 1.25rem;
-  border-radius: 0.5rem;
 }
 
 .card {
-  /* border: 1px red solid;
-  height: 400px;
-  width: 375px; */
-
-  background-color: var(--card);
-  padding: 1.25rem;
-  /* margin-bottom: 1rem; */
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 350px;
 }
 
-.card h2 {
+#hero-image {
+  width: 100%;
+}
+
+h2 {
   color: var(--white);
-  margin: 1rem 0.5rem 0.5rem 0;
-}
-.card h2:hover {
-  color: var(--cyan);
-  margin: 1rem 0.5rem 0.5rem 0;
+  font-family: 'Outfit';
 }
 
-.card ul {
+.description {
+  color: var(--soft-blue);
+  font-family: 'Outfit';
+}
+
+.eth-days {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  font-family: 'Outfit';
   justify-content: space-between;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--line);
 }
-.card ul li {
-  display: flex;
-  align-items: center;
-}
-/* .card ul li img {
-  margin-right: 0.5rem;
-} */
 
-.card ul li:first-child {
+#eth {
   color: var(--cyan);
 }
-figure {
-  display: flex;
-  align-items: center;
-  height: 250px;
-  width: inherit;
-  overflow: hidden;
+
+#days {
+  color: var(--soft-blue);
 }
 
-img {
-  max-width: 100%;
-  /* object-fit:contain;
-  width: inherit; */
+hr {
+  color: var(--line);
 }
 
-ul {
-  list-style: none;
-}
-
-p {
-  font-weight: 300;
-}
-
-.card .avatar {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  /* padding-top: 2rem; */
-
-}
-
-.card .avatar img {
-  width: 4rem;
-  border: 1px solid var(--white);
+#avatar {
+  border: var(--white) 1px solid;
   border-radius: 50%;
-  margin-right: 1rem;
+  width: 20%;
 }
 
-.card .avatar p span {
+#jules {
   color: var(--white);
-  font-weight: 400;
+  font-family: 'Outfit';
+  padding: 1.5rem;
 }
 
-.card .avatar p span:hover {
-  color: var(--cyan);
-  cursor: pointer;
-}
 
 .attribution { 
+  color: #fff;
   /* font-size: 16px; */
   text-align: center;
 }
 .attribution a { 
   color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 500px) {
-  .card {
-    width: 450px;
-    margin: 0 auto 1rem;
-  }
-
-  /* body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 }
