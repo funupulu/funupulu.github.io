@@ -10,6 +10,27 @@
 
 }
 
+h1 {
+  color: var(--light-gray);
+  font-size: xx-large;
+  font-family: 'Big Shoulders Display';
+}
+
+p {
+  color: var(--transparent-white);
+  font-family: 'Lexend Deca';
+}
+
+picture > img {
+  margin-bottom: 2rem;
+}
+h1 {
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: 3rem;
+}
+
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -21,104 +42,68 @@
   /* Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
 }
 
-body, button {
-    font-family: 'Lexend Deca';
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
 }
 
-.container {
-    border-radius: 50px;
-    display: grid;
-    grid-template-rows: repeat(3), 1fr;
-    padding: 1rem;
-    
-
-    width: 400px;
-    margin: 0 auto 1rem;
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3), 1fr;
+  margin: 5rem 0;
+  width: 350px;
 }
 
-.row-1, .row-2, .row-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 5em;
+.sedans, .suv, .luxury {
+  padding: 4rem;
 }
 
-.row-1 {
-    background-color: var(--bright-orange);
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 15px 15px 0 0;
 }
 
-.row-2 {
-    background-color: var(--dark-cyan);
+.suv {
+  background-color: var(--dark-cyan);
 }
 
-.row-3 {
-    background-color: var(--darker-cyan);
+.luxury {
+  background-color: var(--darker-cyan);
+  border-radius: 0 0 15px 15px;
 }
 
-h3 {
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
+.sedans > a {
+  background-color: var(--light-gray);
+  border-radius: 25px;
+  color: var(--bright-orange);
+  font-family: 'Lexend Deca';
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+.suv > a {
+  background-color: var(--light-gray);
+  border-radius: 25px;
+  color: var(--dark-cyan);
+  font-family: 'Lexend Deca';
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+.luxury > a {
+  background-color: var(--light-gray);
+  border-radius: 25px;
+  color: var(--darker-cyan);
+  font-family: 'Lexend Deca';
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+  text-decoration: none;
 }
 
-p {
-  line-height: 1.6;
-}
-
-h2, a, p {
-    color: var(--light-gray);
-}
-
-a {
-    background-color: var(--light-gray);
-    border-radius: 50px;
-    color: var(--bright-orange);
-    cursor: pointer;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 10rem;
-}
-
-a:hover {
-  background-color: yellow;
-  color: #fff;
-}
-
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a { 
-  color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 992px) {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    /* max-width: 900px; */
-    margin: auto;
-  }
-
-  .bright-orange {
-    border-radius: 10px 0 0 10px;
-  }
-
-  .very-dark-cyan {
-    border-radius: 0 10px 10px 0;
-  }
-
-  .card {
-    padding: 45px;
-  }
-
-  .card p {
-    margin-bottom: 80px;
+@media screen and (orientation: landscape), (min-width: 992px) {
+  .grid-container {
+   display: grid;
+   grid-template-columns: repeat(3), 1fr;
   }
 }
