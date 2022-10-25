@@ -123,3 +123,11 @@ body {
   }
   
 }
+
+@media (orientation: landscape) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 930px;
+  }
+}
