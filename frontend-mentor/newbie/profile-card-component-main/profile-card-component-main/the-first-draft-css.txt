@@ -15,6 +15,33 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  background-image: url(/frontend-mentor/newbie/profile-card-component-main/profile-card-component-main/images/bg-pattern-bottom.svg);
+
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid red;
+  width: 425px;
+  
+  display: grid;
+  grid-template-rows: repeat(3), 1fr;
+  
+}
+
+
 .attribution {
   font-size: 11px; text-align: center;
 }
