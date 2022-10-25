@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 }
 
-@media /*screen and (orientation: landscape),*/ (min-width: 992px) {
+@media /*screen and (orientation: landscape),*/ (min-width: 600px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -122,12 +122,4 @@ body {
     border-radius: 0 15px 15px 0;
   }
   
-}
-
-@media (orientation: landscape) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 930px;
-  }
 }
