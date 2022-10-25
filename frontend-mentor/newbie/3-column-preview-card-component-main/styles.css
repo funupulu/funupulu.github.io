@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 }
 
-@media screen and (orientation: landscape), (min-width: 992px) {
+@media /*screen and (orientation: landscape),*/ (min-width: 992px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
