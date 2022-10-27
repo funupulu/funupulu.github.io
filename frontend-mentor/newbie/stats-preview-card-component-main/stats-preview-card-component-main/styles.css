@@ -118,43 +118,59 @@ p {
  }
 
  @media screen and (min-width: 992px) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   .card {
+    border-radius: 15px;
     display: flex;
     flex-direction: row-reverse;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     font-family: 'Lexend Deca';
     width: 600px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .image-header > #mobile-image {
+    display: none;
+  }
+  .image-header > #desktop-image {
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    object-fit:fill;
+    width: 100%;
+  }
+
+  .info-section {
+    margin: 0;
+    width: 100%;
   }
 
   h1 {
-    
+    margin: 0;
     text-align: left;
+  }
+
+  h2 {
+    margin: 0;
   }
 
   p {
     text-align: left;
   }
 
-  .image-header:first-child {
-    display: none;
-  }
-
-  #desktop {
-    display: flex;
-  }
-
   .stats {
     display: flex;
     flex-direction: row;
-    
+    text-align: left;
 
     font-size: small;
-  }
-
-  .companies {
-    margin-right: 4rem;
-  }
-
-  .templates {
-    margin-right: 4rem;
   }
  }
