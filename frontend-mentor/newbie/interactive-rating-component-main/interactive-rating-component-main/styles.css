@@ -35,7 +35,7 @@ body {
 }
 
 .star-image {
-  background-color: varhsl(200, 19%, 78%);
+  background-color: rgb(77, 76, 76);
   border-radius: 50%;
   display: flex;
   flex-direction: row;
@@ -62,24 +62,22 @@ p {
   margin-bottom: 1rem;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  
-}
-
 .numbers {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 span {
-  background-color: aqua;
+  background-color: rgb(77, 76, 76);
   border-radius: 50%;
-  color: var(--light-grey);
+  color: white;
+  cursor: pointer;
   text-align: center;
   height: 2rem;
   width: 2rem;
+}
+span:hover {
+  background-color: var(--light-grey);
 }
 
 .submit {
@@ -87,10 +85,15 @@ span {
   border-radius: 25px;
   background-color: var(--orange);
   color: var(--white);
+  cursor: pointer;
   font-family: 'Overpass';
   letter-spacing: 1px;
   margin-top: 1rem;
   padding: 1rem 8rem;
+}
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 .attribution {

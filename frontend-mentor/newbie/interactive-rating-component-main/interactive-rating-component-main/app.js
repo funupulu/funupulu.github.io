@@ -1,6 +1,7 @@
 const body = document.body
-const submit = body.querySelectorAll('submit')
+const span = body.querySelector('span')
+const submit = body.querySelector('.submit')
 
-submit.addEventListener('click', () => {
-  submit.innerText = 'nice!'
-} )
+span.addEventListener('click', () => {
+  span.style.backgroundColor = 'orange'
+})
