@@ -7,13 +7,9 @@ const rating_btn = body.querySelectorAll('.rating-btn')
 const score = document.querySelector('.score')
 let stars_score = 3 //default
 
-console.log(rating_btn);
+// console.log(rating_btn);
 
 submit_btn.addEventListener('click', onSubmit)
-
-rating_btn.forEach( btn => {
-    btn.addEventListener('click', handleRatingBtnClick)
-  })
 
 function onSubmit() {
   card_one.classList.add('hide')
@@ -21,6 +17,10 @@ function onSubmit() {
   card_two.classList.remove('hide')
   // console.log('submit click');
 }
+
+rating_btn.forEach( btn => {
+    btn.addEventListener('click', handleRatingBtnClick)
+  })
 
 function handleRatingBtnClick(event) {
   rating_btn.forEach(btn => {
