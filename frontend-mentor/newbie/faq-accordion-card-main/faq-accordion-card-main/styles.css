@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Kumbh Sans';
 }
 
 body {
@@ -30,15 +31,37 @@ body {
   min-height: 100vh;
 }
 
-.woman-image-mobile {
-  margin-top: -10rem;
-
-}
-
 .card {
   background-color: var(--light-grayish-blue);
-  border: 1px red solid;
-  width: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrow {
+  cursor: pointer;
+  padding-left: 4rem;
+}
+
+.hide{
+  display: none;
+}
+
+.woman-image-mobile {
+  margin-top: -8.5rem;
+  width: 75%;
+}
+
+.arrow {
+  display: inline-block;
 }
 
 .attribution {
