@@ -25,7 +25,7 @@
 }
 
 body {
-  background-color: var(--soft-violet);
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
   display: grid;
   place-content: center;
   min-height: 100vh;
@@ -42,13 +42,20 @@ body {
 
 .faq {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.question {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.arrow {
+.question img {
   cursor: pointer;
-  padding-left: 4rem;
+  
 }
 
 .hide{
@@ -58,10 +65,6 @@ body {
 .woman-image-mobile {
   margin-top: -8.5rem;
   width: 75%;
-}
-
-.arrow {
-  display: inline-block;
 }
 
 .attribution {
