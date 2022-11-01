@@ -39,9 +39,9 @@ body {
 .card {
   background-color: var(--light-grayish-blue);
   border-radius: 1.5rem;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
   width: 400px;
 }
 
@@ -55,13 +55,10 @@ p {
 }
 
 hr {
-  text-align: center;
   width: 80%;
 }
 
-.answer-1, .answer-2 {
-  transition: translateY(0) 2s;
-}
+
 
 /* .faq {
   display: flex;
