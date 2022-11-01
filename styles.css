@@ -6,8 +6,20 @@
   box-sizing: border-box;
 }
 
+.nav-bar {
+  background-color: aqua;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
 body {
-    background-color: rgb(213, 185, 241);
+    /* background-image:url(/images/undraw_make_it_rain_re_w9pc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+   */
     min-height: 100vh;
     display: grid;
     place-content: center;
@@ -62,4 +74,11 @@ a {
 
 a:hover {
     color: blue;
+}
+
+@media (min-width: 62.5em) {
+  .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
