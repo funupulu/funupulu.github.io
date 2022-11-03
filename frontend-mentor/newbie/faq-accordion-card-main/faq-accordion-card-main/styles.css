@@ -45,6 +45,10 @@ body {
   width: 400px;
 }
 
+.question:hover {
+  color: var(--soft-red);
+}
+
 h1 {
   text-align: center;
 }
@@ -57,22 +61,14 @@ p {
 hr {
   width: 80%;
 }
-
-
-
-/* .faq {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-} */
-
 span {
   padding-left: 2.5rem;
 }
 
-.arrow-1, .arrow-2 {
+.arrow {
   cursor: pointer;
+  float: right;
+  padding: 0.5rem;
 }
 
 hr {
@@ -90,3 +86,4 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
