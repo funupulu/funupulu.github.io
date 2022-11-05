@@ -8,8 +8,8 @@
 :root {
   /* Primary colors */
   --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 84%, 62%);
   --bright-yellow: hsl(71, 73%, 54%);
-
   /* Neutral colors */
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
@@ -23,37 +23,51 @@
 }
 
 body {
-  display: grid;
-  place-content: center;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
-.parent-container {
+.flex-container {
+  background-color: white;
   display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 38rem;
 }
 
-.box {
-  border: 1px red solid;
-  flex: 1 0 150px;
+.top {
+  margin: 2rem;
   text-align: left;
-  /* padding: 2rem; */
-  flex: 1 1 150px;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+h2 {
+  color: var(--cyan);
+  margin-bottom: 1rem;
 }
 
-@media all and (min-width: 992px) {
-  .parent-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+#first-p {
+  color: var(--bright-yellow);
+  margin-bottom: 1rem;
+}
+
+#description {
+  color: gray;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  color: white;
+  padding: 2rem;
+  text-align: left;
+}
+
+.why-us {
+  background-color: var(--light-cyan);
+  padding: 2rem;
+  text-align: left;
+  flex: 1;
 }
