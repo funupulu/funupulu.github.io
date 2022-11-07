@@ -33,9 +33,11 @@ body {
 
 .flex-container {
   background-color: white;
+  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 2rem;
   width: 38rem;
 }
 
@@ -51,11 +53,13 @@ h2 {
 
 #first-p {
   color: var(--bright-yellow);
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 #description {
   color: gray;
+  line-height: 2;
 }
 
 .subscription {
@@ -65,9 +69,45 @@ h2 {
   text-align: left;
 }
 
+.subscription span {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+/* .subscription > p {
+  display: inline-block;
+} */
+
+.subscription > a {
+  background-color: var(--bright-yellow);
+  border-radius: .5rem;
+  color: white;
+  display: block;
+  margin: 2rem 0 0 0;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
 .why-us {
   background-color: var(--light-cyan);
+  color: white;
+  line-height: 1.5rem;
   padding: 2rem;
   text-align: left;
   flex: 1;
+}
+
+.why-us > h3 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 650px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    width: 23.5rem;
+  }
 }
