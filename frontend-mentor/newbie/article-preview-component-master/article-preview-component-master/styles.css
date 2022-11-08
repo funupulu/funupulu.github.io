@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope';
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.flex-container {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 3rem;
+  width: 23.8rem;
+}
+
+/* image and paragraphs */
+
+.hero-image {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.hero-and-text > p {
+  padding: 2rem 2rem 0 2rem;
+  text-align: left;
+}
+.hero-and-text > p:nth-of-type(2) {
+  color: gray;
+}
+
+/* image and paragraphs */
+
+/* avatar and button */
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.avatar > .image-name {
+  display: flex;
+}
+.avatar > .image-name > img {
+  margin-right: 1rem;
+}
+
+.avatar > .image-name > .name-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar > .image-name > .name-date > .bold {
+  font-weight: bold;
+}
+.avatar > .image-name > .name-date > span:nth-of-type(2) {
+  color: gray;
+}
+
+.avatar > .image-name > img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.window-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 3rem;
+}
+
+/* avatar and button */
+
+/* hide class */
+/*hide class */
+
+/* on-click */
+
+.on-click {
+  background-color: var(--very-dark-grayish-blue);
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.on-click > span {
+  color: var(--light-grayish-blue);
+}
+
+.on-click > .social-medias {
+  margin-left: 1rem;
+}
+.on-click > .social-medias > img:nth-of-type(2) {
+  margin: 0 1rem;
+}
+.on-click > img {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 7rem;
+  
+}
+/* on-click */
+.hide {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 650px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    min-width: min-content;
+    width: 38.5rem;
+  }
+
+  .flex-container > picture > .hero-image {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;
+    height: 100%;
+  }
+}
