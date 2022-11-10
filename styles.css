@@ -1,5 +1,7 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
+:root {
+  font-family: 'Oxygen';
 }
 
 * {
@@ -8,16 +10,53 @@
   padding: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 500px) {
+  main > h1 {
+    color: red;
+  }
 }
 
-a {
-  text-decoration: none;
-  text-align: center;
-}
 
-ul > li > a {
-  display: block;
+
+
+
+@media only screen and (max-width: 485px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    width: 100vw;
+  }
+  nav a:hover {
+    color: lightgray;
+    transition-duration: .2s;
+  }
+  
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  ul > li > a {
+    display: block;
+  }
+  nav {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .7s;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: white;
+  }
 }
