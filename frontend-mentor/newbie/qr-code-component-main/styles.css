@@ -24,6 +24,7 @@ body {
 .grid-card {
   background-color: var(--card-color);
   border-radius: 15px;
+  margin: 3rem;
   width: 350px;
 }
 
