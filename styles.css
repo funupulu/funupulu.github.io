@@ -10,17 +10,47 @@
   padding: 0;
 }
 
-@media (min-width: 500px) {
-  main > h1 {
-    color: red;
-  }
+/* @media (min-width: 600px) {
+  
+} */
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+nav a:hover {
+  color: lightgray;
+  transition-duration: .2s;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.branding {
+  display: flex;
+
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+}
 
+main > h1 {
+  color: red;
+}
 
-
-
-@media only screen and (max-width: 485px) {
+@media (max-width: 690px) {
   body {
     display: grid;
     place-content: center;
