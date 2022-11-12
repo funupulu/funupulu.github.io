@@ -3,3 +3,27 @@
 -- https://pokecoder.netlify.app/index.html
 
 
+{blinking cursor} 
+-- https://www.amitmerchant.com/simple-blinking-cursor-animation-using-css/
+
+
+{blinking cursor custom using javascript}
+```
+var cursor = true;
+var speed = 220;
+
+setInterval(() => {
+   if(cursor) {
+     document.getElementById('cursor').style.opacity = 0;
+     cursor = false;
+   }else {
+     document.getElementById('cursor').style.opacity = 1;
+     cursor = true;
+   }
+}, speed == 5);
+
+```
+
+
+{hamburger menu icon} 
+-- ☰
