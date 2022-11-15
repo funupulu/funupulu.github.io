@@ -27,3 +27,13 @@ setInterval(() => {
 
 {hamburger menu icon} 
 -- ☰
+
+
+{creating a web component with vanilla javascript}
+
+-- https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/
+
+
+{web components 101: vanilla javascript}
+
+-- https://coderpad.io/blog/development/intro-to-web-components-vanilla-js/
