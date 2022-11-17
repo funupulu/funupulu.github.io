@@ -36,4 +36,76 @@ setInterval(() => {
 
 {web components 101: vanilla javascript}
 
--- https://coderpad.io/blog/development/intro-to-web-components-vanilla-js/
+-- https://coderpad.io/blog/developmhttps://coderpad.io/blog/development/intro-to-web-components-vanilla-js/
+ent/intro-to-web-components-vanilla-js/
+
+
+materializecss.com
+
+{5 pro-level react do's & don'ts}
+-- https://www.youtube.com/watch?v=4FhJkX18fS8&t=654s
+
+
+undraw.co/illustrations
+
+{10 modern layouts in 1 line of css}
+-- https://www.youtube.com/watch?v=qm0IfG1GyZU
+
+
+*****************************
+8-month evaluation
+-------------------
+
+august
+-- the this keyword
+-- why do programs use classes?
+-- what-s the deal with css grid?
+-- Array.from() to convert an HTMLcollection into an Array
+-- controlling the <img> tag
+-- event handlers: understanding event propogation/capturing/bubbling/delegation
+-- box-sizing: border-box
+-- how to position elements usng css grid
+-- I actually wrote this: " sometimes i feel like I'll never understand css grid , especially the property grid-template-columns " ... "So I dont know how to position elements at all..."
+-- according to kyle from web dev simplified 5 projects that will help me get a job
+1. any web app that consumes a third party api
+2. a broichure site 
+3. an e-commerce sometimes
+4. portfolio setInterval
+5. create a very simple game
+
+-- still don't know what recursion means
+-- what's the + sign for in css?
+-- creating fdrop-downs in css. I thought it needs js?
+-- I thought we don't need to use the position property
+--what's a call to action button
+-- "how the hell do i efficiently put images in vscode"
+
+September
+-- what's the deal with sass?
+-- what is parcing?
+-- "our goal is not to learn vanilla js. eventually, we want to learn a modern js web framework. [these frameworks] will do a lot of the nitty gritty things for understand
+-- check out the living standard for the dom 
+-- there are layers to how  a web page is loaded and layered
+-- a paerser can read text and convert the text into something
+--"if you wanted to start looking at React now ... just go for it" - martyn
+-- how do i use a dev log?
+-- how to organize files for a program
+-- what is dns management?
+-- "make grids responsive naturally without having to write media queries"
+-- what does margin auto do?
+-- the data attribute
+-- max-content saved my life
+-- sometimes display: flex doesnt work. why?
+-- "suppose you were wrong. how would you know? how would you test for that possibility?
+-- margin doesn't account into the height of an elements
+-- "let the children dictate the height of the parent container"
+-- the browser layout engine
+-- "the iron rule of nature is: you gete what you reward for. If you want ants to come, you put sugar on the floor."
+-- the forEach()
+--arrow functions
+Ania Kubow
+-- the event target interface
+-- React's goal is ... to render HTML in a web page.
+-- JSX allows you to write HTML tags inside the js code
+-- ReactDOM - react's rednering api
+-- what's a stack?
