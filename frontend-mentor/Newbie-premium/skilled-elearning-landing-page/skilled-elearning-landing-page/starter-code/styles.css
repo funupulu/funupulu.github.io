@@ -1,0 +1,113 @@
+
+/* PHASES 1 */
+:root {
+  /* Single Colors */
+  --purple: #666ca3;
+  --blue: #13183f;
+  --gray: #83869a;
+  --pink-dark: #f74780;
+  --pink-light: #ffa7c3;
+  --white: #fff;
+
+  /* Gradient Colors */
+  --gradient-pink: #f02aa6;
+  --gradient-orange: #ff6f48;
+  --gradient-blue: #4851ff;
+  --gradient-background-bottom: #f0f1ff;
+
+  /* Button Measurements */
+  --button-padding-top-bottom: 2.1rem;
+  --button-padding-left-right: 0.933rem;
+
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans';
+}
+
+body {
+  background: linear-gradient(var(--white), var(--gradient-background-bottom));
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 1rem ;
+  
+}
+header > span {
+  font-weight: 900;
+} 
+header > button {
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  font-size: xx-large;
+}
+
+button {
+  background-color: var(--blue);
+  border-radius: 100px;
+  color: #fff;
+  padding: .5rem;
+}
+
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 65px;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+footer > button {
+  background: linear-gradient(var(--gradient-blue), var(--gradient-pink));
+  border: none;
+  padding: 1rem 2rem;
+}
+
+/* END OF PHASE 1 */
+
+
+
+
+
+
+/* PHASE 2 */
+
+main {
+  margin: 3rem .5rem 0.5rem;
+}
+
+h1 {
+  font-size:xxx-large;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+.hero-header > button {
+  background: linear-gradient(var(--gradient-orange), var(--gradient-pink));
+  border: none;
+  padding: 1rem 2rem;
+}
+
+img {
+  width: 100%;
+}
+/* END OF PHASE 2 */
