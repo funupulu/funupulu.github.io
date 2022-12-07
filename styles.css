@@ -11,6 +11,7 @@
 }
 
 body {
+  background: linear-gradient(#f0f1ff, #e4dff7);
   display: grid;
   min-height: 100vh;
   place-content: center;
